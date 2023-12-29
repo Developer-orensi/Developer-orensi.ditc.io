@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영외사 - 영단어 외우는 사이트</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- <div id="login_page">
+
+        <input id="email_input" type="email" placeholder="이메일 입력"><br>
+        
+        <input id="password_input" type="password" placeholder="패스워드 입력">
+        <br>
+        <button id="signup_button">회원가입</button>
+        <button id="login_button">로그인</button>
+
+    </div> -->
+
+
+    <input type="number" id="load_code_input" placeholder="단어 코드 입력" style="width : 200px; font-size: 30px;">
+    <button id="load_voca" style="font-size: 25px;">단어 불러오기</button><br>
+
+    <select id="memorize_type">
+    
+        <option value="kor-lv1">뜻 쓰기 Lv.1</option>
+
+        <option value="kor-lv2">뜻 쓰기 Lv.2</option>
+
+        <option value="eng">영어 쓰기 Lv.1</option>
+
+
+    </select>
+
+    
+    
+
+
+
+
+
+    <div class="playpage">
+
+        <div id="first">
+            
+            <div id="first_selected">indicate</div>
+
+            <div id="remain_display">03</div>
+
+
+        </div>
+
+        <div id="answerpage">
+
+            <input id="answer_input" type="text" placeholder="정답 입력">
+            <button id="answer_button">입력</button>
+
+
+            <!-- <input id="making_input" type="text" placeholder="입력"> -->
+
+
+
+        </div>
+
+        <div id="resultdisplay">정답입니다!(3개)</div>
+
+        <div style="display: flex;">
+
+            <div  id="progress">10/200</div>
+
+            <div id="answer_numberdisplay">9 / 10</div>
+
+
+        </div>
+
+        
+
+
+    </div>
+
+
+    <div class="register_page" >
+
+        <div id="make_inputs">
+
+            <input id="make_meaning_input" type="text" placeholder="설명에 따라 입력">
+            <button id="make_englishcomplete">완료</button>
+
+        </div>
+
+        <div class="make_description">
+
+            <div>
+
+                eqfqef
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div id="making_complete">
+
+            <input type="number" id="make_voca_id" placeholder="단어 코드(8~12자리)">
+            <button id="make_voca_button">완료</button>
+
+
+        </div>
+
+        
+        
+
+
+
+    </div>
+
+
+
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script type="module"  src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+    <script type="module"  src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js"></script>
+
+    
+    <script type="module" src="script.js"></script>
+
+    
+</body>
+</html>
